@@ -63,8 +63,8 @@ if task == "Regresi":
             # 2. TRAINING MODEL
             model = LinearRegression()
             model.fit(X_train, y_train)
-            with st.expander("👁️ Intip Dataset"):
-                st.dataframe(X_train)
+            with st.expander("Lihat Dataset"):
+                st.dataframe(df.head(5))
 
             # Form Input untuk User
             st.markdown("### 🎛️ Form Prediksi Baru")

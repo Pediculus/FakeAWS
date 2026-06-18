@@ -88,7 +88,7 @@ if task == "Regresi":
 # =====================================================================
 elif task == "Klasifikasi":
     model_choice = st.selectbox("Pilih Model & Dataset Klasifikasi:",
-                                ["Logistic Regression (Data Medis)", "Random Forest (Data Churn)"])
+                                ["Logistic Regression (Data Medis)"])
     st.markdown("---")
 
     # --- MODEL 1: LOGISTIC REGRESSION (NEEDS SCALING) ---
@@ -101,7 +101,7 @@ elif task == "Klasifikasi":
         else:
             df = pd.read_csv(csv_file)
 
-            with st.expander("👁️ Intip Dataset Medis"):
+            with st.expander("Lihat Dataset"):
                 st.dataframe(df.head(5))
 
             st.markdown("### 🎛️ Form Data Klinis Pasien")

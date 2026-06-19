@@ -25,9 +25,9 @@ st.set_page_config(page_title="Fake Deployment", page_icon="🎯", layout="wide"
 
 # --- SIDEBAR NAVIGATION ---
 st.sidebar.title("ML")
-task = st.sidebar.radio("Pilih Pilar ML:", ["Regresi", "Klasifikasi"])
+task = st.sidebar.radio("ML:", ["Regresi", "Klasifikasi"])
 st.sidebar.markdown("---")
-st.title(f"Pilar: {task}")
+st.title(f"{task}")
 
 
 

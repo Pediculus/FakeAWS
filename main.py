@@ -88,12 +88,12 @@ if task == "Regresi":
 # =====================================================================
 elif task == "Klasifikasi":
     model_choice = st.selectbox("Pilih Model & Dataset Klasifikasi:",
-                                ["Logistic Regression (Data Medis)"])
+                                ["Data Medis"])
     st.markdown("---")
 
     # --- MODEL 1: LOGISTIC REGRESSION (NEEDS SCALING) ---
-    if model_choice == "Logistic Regression (Data Medis)":
-        st.subheader("🩺 Logistic Regression Classifier")
+    if model_choice == "Data Medis":
+        st.subheader("Klasifikasi Dataset Kanker")
         csv_file = "classification_data.csv"
 
         if not os.path.exists(csv_file):
